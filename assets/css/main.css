@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .containerHeader {
+  width: 84%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .containerHeader h1 {
+  font-family: sans-serif;
+  font-size: 25px;
+}
+header .containerHeader .headerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+header .containerHeader .headerBox nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+header .containerHeader .headerBox nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+header .containerHeader .headerBox nav ul button {
+  border: none;
+  cursor: pointer;
+}
+header .containerHeader .headerBox nav ul button i:hover {
+  color: #edcece;
+}
+header .containerHeader .headerBox nav ul li {
+  cursor: pointer;
+  list-style: none;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+header .containerHeader .headerBox nav ul li:hover {
+  color: #E3E3E3;
+}
+
+#firstSection {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./../../../assets/image/slider_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#firstSection div {
+  width: 50%;
+  display: grid;
+  flex-basis: 0;
+  flex-grow: 1;
+  gap: 40px;
+  padding-top: 110px;
+  padding-left: 110px;
+}
+#firstSection div h6 {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#firstSection div h2 {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 65px;
+  color: #282828;
+}
+#firstSection div button {
+  width: 130px;
+  height: 42px;
+  background-color: #FE4C50;
+  border-bottom: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
+}
+#firstSection div button:hover {
+  background-color: #ea6b6e;
+}
+.productContainer{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: 80%;
+  margin: 10px auto;
+  gap: 20px 0;
+}
+.productContainer p {
+  color: #FE4C50;
+}
+.cart{
+  border-right: 1px solid rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: all 0.7s ease-in-out;
+  height: 270px;
+}
+.cartTop{
+  padding: 10px;
+  height: 150px;
+  width: 100%;
+}
+.cartTop img{
+  width:100%;
+  height:150px;
+  object-fit: contain;
+}
+h6{
+  padding: 7px;
+}
+.cart:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.cart:hover .cartBtn{
+  visibility: visible;
+}
+.cartBtn{
+  width: 100%;
+  background-color: #FE4C50;
+  padding: 10px;
+  border: none;
+  color: white;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.cartBtn:hover{
+  background-color: #fe7c7f;
+  cursor: pointer;
+}

@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .containerHeader {
+        width: 84%;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+
+        .headerBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 50px;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 40px;
+
+                    button {
+                        border: none;
+                        cursor: pointer;
+
+                        i {
+                            &:hover {
+                                color: #edcece;
+                            }
+                        }
+                    }
+
+                    li {
+                        cursor: pointer;
+                        list-style: none;
+                        font-family: sans-serif;
+                        font-size: 12px;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: #E3E3E3;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+#firstSection {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./../../../assets/image/slider_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    div {
+        width: 50%;
+        display: grid;
+        flex-basis: 0;
+        flex-grow: 1;
+        gap: 40px;
+        padding-top: 110px;
+        padding-left: 110px;
+
+        h6 {
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 65px;
+            color: #282828;
+            cursor: pointer;
+        }
+
+        button {
+            width: 130px;
+            height: 42px;
+            background-color: #FE4C50;
+            border-bottom: none;
+            color: white;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-weight: 400;
+            border-radius: 10px;
+            border: none;
+            &:hover {
+                background-color: #ea6b6e;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
